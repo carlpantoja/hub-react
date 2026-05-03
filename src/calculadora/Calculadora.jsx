@@ -1,36 +1,7 @@
 import { useState } from "react";
-import styled from "styled-components";
-
-const Container = styled.div`
-    background-color: #000;
-    width: 27em;
-    border-radius: 15px;
-    padding: 1em;
-`
-
-const Display = styled.div`
-    margin-top: 15px;
-    h2 {
-        display: flex;
-        justify-content: flex-end;
-        color: #fff;
-        padding: 5px;
-        margin-bottom: 5px;
-    }
-`
-
-const Button = styled.button`
-    width: 3em;
-    height: 3em;
-    margin-left: 1.2em;
-    margin-bottom: 0.5em;
-    border: none;
-    border-radius: 0.2em;
-    font-size: 1.5em;
-    &:hover {
-        cursor: pointer;
-    }
-`
+import { Container } from "../components/Container";
+import { Display } from "../components/Display";
+import { Button } from "../components/Button";
 
 export function Calculadora() {
     const [num, setNum] = useState(0)
@@ -77,7 +48,7 @@ export function Calculadora() {
     return(
         <Container>
             <Display>
-                {oldNum ? <h2>{oldNum+operator+num}</h2> : ""}
+                {oldNum ? <h2>{oldNum+operator}</h2> : ""}
                 <h2>{num}</h2>
             </Display>
             <Button onClick={clear}>AC</Button>
