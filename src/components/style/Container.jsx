@@ -7,4 +7,16 @@ export const Container = styled.div`
     ${props => props.$calc && css `
         background-color: #000;
     `}
+    ${props => props.$game && css`
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        span {
+            display: flex;
+            margin: 10px;
+            p {
+                margin-right: 10px;
+            }
+        }
+    `}
 `

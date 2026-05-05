@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import App from './App';
 import { Home } from './components/Home';
 import { Calculadora } from './calculadora/Calculadora';
+import { Game } from './jogo-da-velha/Game';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -13,6 +14,7 @@ root.render(
         <Route element={<App/>}>
           <Route path={'/'} element={<Home/>}/>
           <Route path={'/calculadora'} element={<Calculadora/>}/>
+          <Route path={'/jogo-da-velha'} element={<Game/>}/>
         </Route>
       </Routes>
     </BrowserRouter>
