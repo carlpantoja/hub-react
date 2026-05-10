@@ -19,4 +19,18 @@ export const Container = styled.div`
             }
         }
     `}
+    ${props => props.$index && css`
+        width: 100%;
+        padding: 0;
+        h2 {
+            padding: 5px;
+            text-align: center;
+        }
+    `}
+    ${props => props.$details && css`
+        width: 100%;
+        .capa {
+            display: flex;
+        }
+    `}
 `

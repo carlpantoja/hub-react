@@ -13,10 +13,11 @@ export function Nav() {
         <nav>
             <div id="dropbox" onClick={dropbox}>
                 <i className="fa fa-bars"></i>
-                <div id="dropbox-content">
+                <div id="dropbox-content" style={{display: 'none'}}>
                     <Link to={'/'}>Home</Link>
                     <Link to={'/calculadora'}>Calculadora</Link>
                     <Link to={'/jogo-da-velha'}>Jogo da Velha</Link>
+                    <Link to={'/catalogo'}>Filmes e Series</Link>
                 </div>
             </div>
         </nav>
