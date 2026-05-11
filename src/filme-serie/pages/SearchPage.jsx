@@ -21,7 +21,7 @@ export function SearchPage() {
     }, [query])
 
     return(
-        <Container $index>
+        <Container $searchPage>
             <Box $searchPage>
                 {Movie(searchMovie)}
                 {Serie(searchSerie)}

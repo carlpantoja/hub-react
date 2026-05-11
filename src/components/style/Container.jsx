@@ -1,10 +1,10 @@
 import styled, { css } from "styled-components";
 
 export const Container = styled.div`
-    width: 20em;
-    border-radius: 15px;
-    padding: 0.5em;
     ${props => props.$calc && css `
+        width: 20em;
+        border-radius: 15px;
+        padding: 0.5em;
         background-color: #000;
     `}
     ${props => props.$game && css`
@@ -27,10 +27,25 @@ export const Container = styled.div`
             text-align: center;
         }
     `}
+    ${props => props.$searchPage && css`
+        padding: 15px;
+    `}
     ${props => props.$details && css`
         width: 100%;
+        h3 {
+            font-weight: normal;
+            padding: 5px;
+            }
         .capa {
             display: flex;
+            padding: 5px;
+            img {
+                width: 300px;
+            }
+            .sinopse {
+                width: 80%;
+                padding: 5px;
+            }
         }
     `}
 `
